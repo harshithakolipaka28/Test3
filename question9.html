@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(222, 173, 135);
+            /* Absolute positioning for centering */
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            /* Center the box */
+            transform: translate(-50%, -50%); 
+        }
+        
+        /* Style for box2 */
+        .box2 {
+            width: 150px;
+            height: 150px;
+            background-color: slateblue;
+            /* Positioning box2 */
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            /* Keep it centered */
+            transform: translate(-50%, -50%); 
+            /* Make box2 appear above box1 */
+            z-index: 1; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Question-9 -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

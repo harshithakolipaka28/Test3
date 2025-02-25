@@ -72,6 +72,26 @@
         .scale-button:hover{
             transform:scale(1.2);
         }
+       
+       /* Question-8 */
+        /* Box styling */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(153, 51, 90); 
+            /* Apply animation */
+            animation: slide 2s linear infinite; 
+        }
+
+        /* Animation definition */
+        @keyframes slide {
+            0% {
+                transform: translateX(0); 
+            }
+            100% {
+                transform: translateX(300px); 
+            }
+        }
 
 
         
@@ -117,10 +137,13 @@
     <!------6.button that changes color when hovered over.-->
 </div>
 
-<button class="color-change-button">Hover over me</button>
+<button class="color-change-button">Hover over me</button><br><br><br>
 
     <!------7.buttonbutton that scales when hovered over-->
-    <button class="scale-button">Hover Me</button>
+    <button class="scale-button">Hover Me</button><br><br><br>
+
+    <!------8.box that moves from left to right-->
+    <div class="box"></div>
 
 </body>
 </html>
